@@ -1,0 +1,125 @@
+.form {
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.label {
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--gray);
+}
+.input {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background-color: var(--inputs);
+  padding: 12px 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  cursor: pointer;
+}
+.pricePrefix {
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--main);
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+}
+.priceWithPrefix {
+  padding-left: 49px;
+}
+.select {
+  appearance: none;
+  min-width: 204px;
+  background-image: url('/arrow-down.png');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  transition: background-image 250ms ease-in-out;
+}
+.select:open {
+  background-image: url('/arrow-up.png');
+}
+.select option {
+  background-color: var(--white);
+  color: var(--gray);
+  padding-left: 16px;
+  border: 1px solid var(--inputs);
+  border-radius: 12px;
+}
+.select option:checked {
+  color: var(--main);
+}
+.select::-webkit-scrollbar {
+  display: none;
+}
+.priceSelect {
+  width: 196px;
+}
+
+.mileageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mileageFrom {
+  border-right: 1px solid var(--gray-light);
+  border-radius: 12px 0 0 12px;
+  width: 160px;
+  height: 44px;
+  background-color: var(--inputs);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--main);
+  padding: 12px 0 12px 16px;
+  display: flex;
+}
+.mileageInput {
+  appearance: none;
+  margin-left: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 90px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--main);
+}
+.mileageTo {
+  border-radius: 0 12px 12px 0;
+  width: 160px;
+  height: 44px;
+  background-color: var(--inputs);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--main);
+  padding: 12px 0 12px 16px;
+  display: flex;
+}
+
+.searchBtn {
+  width: 156px;
+  height: 44px;
+  background-color: var(--button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--white);
+  transition: background-color 250ms ease-in-out;
+}
+.searchBtn:hover,
+.searchBtn:focus {
+  background-color: var(--button-hover);
+}

@@ -1,0 +1,71 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(17, 18, 19, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 420px;
+
+  padding: 80px 40px;
+
+  border-radius: 24px;
+  background-color: #fff;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background-color 200ms ease;
+}
+
+.closeBtn:hover {
+  background-color: #f2f4f7;
+}
+
+.modalSuccess {
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: #3470ff;
+}
+
+.modalError {
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: #d84343;
+}

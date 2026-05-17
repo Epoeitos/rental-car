@@ -1,0 +1,13 @@
+.section {
+  padding-top: 84px;
+  padding-bottom: 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+.emptyText {
+  font-family: var(--second-family);
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.3;
+}
