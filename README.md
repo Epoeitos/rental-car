@@ -6,7 +6,7 @@ A modern car rental web application built with Next.js and TypeScript. Users can
 
 ## 🌐 Live Demo
 
-[View deployed app](https://outsource-dashboard-hqca.vercel.app)
+[View deployed app](https://rental-car-nu-brown.vercel.app/)
 
 ---
 
